@@ -118,5 +118,6 @@ alias pip=pip3
 alias python=python3
 alias pycharm=pycharm.sh
 
+export PATH="$PATH:."
 export PATH="$PATH:/opt/pycharm/bin/"
 set -o vi

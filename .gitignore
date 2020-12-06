@@ -1,8 +1,9 @@
 # Ignore everything
 *
 
-# But not these files...
+# Except this
 !*.vimrc
 !*.vim
 !*.bashrc
 !.gitignore
+!.scripts
