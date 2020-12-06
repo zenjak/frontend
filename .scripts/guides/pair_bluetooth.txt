@@ -1,0 +1,5 @@
+hcitool dev
+hcitool -i hci0 scan
+bluetoothctl
+connect <mac_address>
+pin is 0000 if not exist
