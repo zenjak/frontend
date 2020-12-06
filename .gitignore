@@ -11,4 +11,7 @@
 !.config/
 !.config/autostart/
 !.config/autostart/**
+!.config/JetBrains/
+!.config/JetBrains/pycharm/
+!.config/JetBrains/pycharm/**
 !.conkyrc
