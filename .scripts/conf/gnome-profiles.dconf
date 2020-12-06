@@ -1,0 +1,8 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(41,45,62)'
+foreground-color='rgb(208,208,208)'
+palette=['rgb(41,45,62)', 'rgb(240,113,120)', 'rgb(195,232,141)', 'rgb(255,203,107)', 'rgb(130,170,255)', 'rgb(199,146,234)', 'rgb(137,221,255)', 'rgb(208,208,208)', 'rgb(67,71,88)', 'rgb(255,139,146)', 'rgb(221,255,167)', 'rgb(255,229,133)', 'rgb(156,196,255)', 'rgb(225,172,255)', 'rgb(163,247,255)', 'rgb(255,255,255)']
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='palenight'
