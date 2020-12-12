@@ -5,6 +5,7 @@
 !*.vimrc
 !*.vim
 !*.bashrc
+!*.ideavimrc
 !.gitignore
 !.scripts/
 !.scripts/**
