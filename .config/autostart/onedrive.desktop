@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=onedrive synch
+Comment=Sync your files across computers and to the web
+Exec="rclone --vfs-cache-mode writes mount onedrive: ~/onedrive"
+X-GNOME-Autostart-enabled=true
+Hidden=false
+NoDisplay=false
