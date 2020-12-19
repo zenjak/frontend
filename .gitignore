@@ -2,6 +2,7 @@
 *
 
 # Except this
+!.vim/autoload/
 !*.vimrc
 !*.vim
 !*.bashrc
