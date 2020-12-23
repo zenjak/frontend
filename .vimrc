@@ -1,3 +1,8 @@
+" vimwiki required settings
+set nocompatible
+filetype plugin on
+syntax on
+
 " map F9 to run the file through python console
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -5,16 +10,20 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 " install plugins
 call plug#begin()
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 
-" vimwiki required settings
-set nocompatible
-filetype plugin on
-syntax on
+" Material UI color theme
+let g:material_theme_style = 'palenight'
+let g:material_terminal_italics = 1
+colorscheme material
 
 " vimwiki default to md
-"let g:vimwiki_list = [{ 'path': '~/Documents/notes/',
-"       \ 'syntax':'markdown', 'ext': '.md' }]
+let g:vimwiki_list = [{ 'path': '~/Documents/notes/',
+       \ 'syntax':'markdown', 'ext': '.md' }]
+" vimwiki uses full extension so it works on github and others
+let g:vimwiki_markdown_link_ext = 1
+
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -34,5 +43,16 @@ if has('persistent_undo')      "check if your vim version supports it
 :nnoremap <Leader>q" ciw""<Esc>P
 :nnoremap <Leader>q' ciw''<Esc>P
 
+" Allow changing windows when in terminal
+tnoremap <C-w>h <C-\><C-n><C-w>h
+tnoremap <C-w>j <C-\><C-n><C-w>j
+tnoremap <C-w>k <C-\><C-n><C-w>k
+tnoremap <C-w>l <C-\><C-n><C-w>l
+
 " yank to system clipboard
 set clipboard=unnamedplus
+
+" default with line numbers on
+set number
+
+
