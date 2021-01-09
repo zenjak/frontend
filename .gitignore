@@ -17,3 +17,5 @@
 !.config/JetBrains/pycharm/
 !.config/JetBrains/pycharm/**
 !.conkyrc
+!.config/fish/
+!.config/fish/**
