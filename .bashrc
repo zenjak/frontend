@@ -128,3 +128,5 @@ export PATH="$PATH:/opt/pycharm/bin/"
 
 # stops terminals flow control interferring with Vim 
 stty start undef stop undef
+
+DISPLAY=localhost:0.0

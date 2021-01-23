@@ -19,3 +19,6 @@
 !.conkyrc
 !.config/fish/
 !.config/fish/**
+!fonts
+!fonts/*
+!Documents

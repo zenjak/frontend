@@ -49,10 +49,7 @@ tnoremap <C-w>j <C-\><C-n><C-w>j
 tnoremap <C-w>k <C-\><C-n><C-w>k
 tnoremap <C-w>l <C-\><C-n><C-w>l
 
-" yank to system clipboard
-set clipboard=unnamedplus
-
 " default with line numbers on
 set number
 
-
+set clipboard=unnamed
