@@ -19,7 +19,7 @@ let g:material_terminal_italics = 1
 colorscheme material
 
 " vimwiki default to md
-let g:vimwiki_list = [{ 'path': '/mnt/c/Users/jack_/Documents/vimwiki/',
+let g:vimwiki_list = [{ 'path': '~/Documents/vimwiki/',
        \ 'syntax':'markdown', 'ext': '.md' }]
 " vimwiki uses full extension so it works on github and others
 let g:vimwiki_markdown_link_ext = 1

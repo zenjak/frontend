@@ -1,4 +1,4 @@
-# Ignore everything
+#Ignore everything
 *
 
 # Except this
@@ -19,6 +19,12 @@
 !.conkyrc
 !.config/fish/
 !.config/fish/**
+!.config/i3/
+!.config/i3/**
+!.config/autokey/
+!.config/autokey/**
+!.config/rofi/
+!.config/rofi/**
 !fonts
 !fonts/*
 !Documents
