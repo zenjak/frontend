@@ -1,4 +1,0 @@
-IdeaVIM
-aws.toolkit
-com.chrisrm.idea.MaterialThemeUI
-net.seesharpsoft.intellij.plugins.csv

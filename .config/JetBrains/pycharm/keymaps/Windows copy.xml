@@ -1,6 +1,0 @@
-<keymap version="1" name="Windows copy" parent="$default">
-  <action id="DatabaseView.SqlGenerator" />
-  <action id="Git.Ignore.File">
-    <keyboard-shortcut first-keystroke="ctrl alt g" />
-  </action>
-</keymap>
