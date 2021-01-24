@@ -3,10 +3,11 @@
 
 # Except this
 !.vim/autoload/
-!*.vimrc
-!*.vim
-!*.bashrc
-!*.ideavimrc
+!.vimrc
+!.vim
+!.bashrc
+!.ideavimrc
+!.xinitrc
 !.gitignore
 !.scripts/
 !.scripts/**
