@@ -6,6 +6,7 @@
 !.vim/autoload/
 !.vimrc
 !.vim
+!requirements.txt
 !.alacritty.yml
 !packages
 !aur-list.pkg
