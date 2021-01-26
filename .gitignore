@@ -2,6 +2,7 @@
 *
 
 # Except this
+!.i3status.py
 !.vim/autoload/
 !.vimrc
 !.vim
