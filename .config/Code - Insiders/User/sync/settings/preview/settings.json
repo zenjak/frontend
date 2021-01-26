@@ -1,0 +1,118 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.linux": "/bin/fish",
+    "workbench.colorTheme": "Material Theme Palenight",
+    "zenMode.fullScreen": false,
+    "zenMode.centerLayout": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "window.titleBarStyle": "custom",
+    "python.insidersChannel": "daily",
+    "terminal.integrated.fontFamily": "Hack",
+    "editor.fontFamily": "Hack",
+    "scm.inputFontFamily": "Hack",
+    "debug.console.fontFamily": "Hack",
+    "editor.codeLensFontFamily": "Hack",
+    "markdown.preview.fontFamily": "Hack",
+    "python.languageServer": "Pylance",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.flake8Args": [
+        "--max-line-length=88",
+        "--select = B,C,E,F,W,T4,B9",
+        "--max-complexity = 18"
+    ],
+    "vim.useSystemClipboard": true,
+    "wiki.basePath": "/home/jacko/Documents/vimwiki/",
+    "wiki.baseRootFile": "index.md",
+    "jupyter.askForKernelRestart": false,
+    "settingsSync.keybindingsPerPlatform": false,
+    "vim.handleKeys": {
+        "<C-d>": true
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "C-r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToNextGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "terminal.toggleVisibility"
+            ]
+           
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": [
+                "fileutils.renameFile"
+            ]
+        }
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "autoDocstring.docstringFormat": "numpy",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "timeline.excludeSources": [],
+    "gitlens.keymap": "alternate"
+}
