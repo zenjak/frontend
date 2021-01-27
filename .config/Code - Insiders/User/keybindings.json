@@ -321,7 +321,7 @@
         "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
     },
     {
-        "key": "shift+alt+l",
+        "key": "ctrl+shift+alt+right",
         "command": "workbench.action.terminal.split",
         "when": "terminalFocus && terminalProcessSupported"
     },
@@ -800,7 +800,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "shift+alt+j",
+        "key": "alt+down",
         "command": "workbench.action.terminal.newInActiveWorkspace"
     },
     {

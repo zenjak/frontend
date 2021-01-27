@@ -62,7 +62,11 @@ status.register("temp",
 #
 # Note: the network module requires PyPI package netifaces
 status.register("network",
-    interface="eno1",
+    interface="enp7s0u2u4",
+    format_up="{v4cidr}",)
+
+status.register("network",
+    interface="wlan0",
     format_up="{v4cidr}",)
 
 

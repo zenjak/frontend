@@ -114,5 +114,7 @@
         "editor.defaultFormatter": "ms-python.python"
     },
     "timeline.excludeSources": [],
-    "gitlens.keymap": "alternate"
+    "gitlens.keymap": "alternate",
+    "editor.fontSize": 13,
+    "python.defaultInterpreterPath": "/usr/bin/python"
 }
