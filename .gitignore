@@ -19,9 +19,6 @@
 !.scripts/
 !.scripts/**
 !.config/
-!.config/Code\ -\ Insiders/
-!.config/Code\ -\ Insiders/User
-!.config/Code\ -\ Insiders/User/**
 !.config/autostart/
 !.config/autostart/**
 !.config/JetBrains/
@@ -39,3 +36,4 @@
 !fonts
 !fonts/*
 !Documents
+.config/Code - Insiders/**

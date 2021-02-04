@@ -116,5 +116,6 @@
     "timeline.excludeSources": [],
     "gitlens.keymap": "alternate",
     "editor.fontSize": 13,
-    "python.defaultInterpreterPath": "/usr/bin/python"
+    "python.defaultInterpreterPath": "/usr/bin/python",
+    "diffEditor.ignoreTrimWhitespace": false
 }

@@ -195,14 +195,8 @@
         "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
     },
     {
-        "key": "alt+left",
-        "command": "workbench.action.focusLeftGroup",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
-    },
-    {
-        "key": "alt+right",
-        "command": "workbench.action.focusRightGroup",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "key": "alt+l",
+        "command": "workbench.action.focusRightGroup"
     },
     {
         "key": "alt+up",
@@ -210,7 +204,7 @@
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
     {
-        "key": "alt+down",
+        "key": "alt+j",
         "command": "workbench.action.focusBelowGroup",
         "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
     },
@@ -671,22 +665,6 @@
         "command": "workbench.action.debug.configure"
     },
     {
-        "key": "alt+j",
-        "command": "workbench.action.splitEditorDown"
-    },
-    {
-        "key": "alt+h \\",
-        "command": "workbench.action.splitEditorLeft"
-    },
-    {
-        "key": "alt+l",
-        "command": "workbench.action.splitEditorRight"
-    },
-    {
-        "key": "alt+k",
-        "command": "workbench.action.splitEditorUp"
-    },
-    {
         "key": "alt+m",
         "command": "workbench.action.toggleStatusbarVisibility"
     },
@@ -760,12 +738,22 @@
         "when": "hasSearchResult || inSearchEditor"
     },
     {
+        "key": "ctrl+shift+alt+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
         "key": "f4",
         "command": "-search.action.focusNextSearchResult",
         "when": "hasSearchResult || inSearchEditor"
     },
     {
         "key": "ctrl+shift+alt+up",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
         "command": "search.action.focusPreviousSearchResult",
         "when": "hasSearchResult || inSearchEditor"
     },
@@ -886,6 +874,14 @@
         "when": "textCompareEditorVisible"
     },
     {
+        "key": "ctrl+shift+alt+l",
+        "command": "workbench.action.compareEditor.focusPrimarySide",
+    },
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.compareEditor.focusSecondarySide",
+    },
+    {
         "key": "alt+delete",
         "command": "workbench.action.closeWindow",
         "when": "!editorIsOpen && !multipleEditorGroups"
@@ -910,7 +906,7 @@
         "when": "activeEditorGroupEmpty && multipleEditorGroups"
     },
     {
-        "key": "shift+alt+right",
+        "key": "shift+alt+l",
         "command": "workbench.action.moveEditorToNextGroup"
     },
     {
@@ -918,7 +914,7 @@
         "command": "-workbench.action.moveEditorToNextGroup"
     },
     {
-        "key": "shift+alt+left",
+        "key": "shift+alt+h",
         "command": "workbench.action.moveEditorToPreviousGroup"
     },
     {
@@ -1001,5 +997,90 @@
         "key": "alt+b",
         "command": "-gitlens.toggleFileBlame",
         "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-references-view.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-gitlens.showQuickRepoHistory",
+        "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-editor.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-editor.showIncomingCalls",
+        "when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-editor.showOutgoingCalls",
+        "when": "callHierarchyVisible && callHierarchyDirection == 'incomingCalls'"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+k ctrl+down",
+        "command": "-workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+up",
+        "command": "-workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+a r",
+        "command": "workbench.action.tasks.restartTask"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "alt+h",
+        "command": "-gitlens.showQuickFileHistory",
+        "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "ctrl+k down",
+        "command": "-workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "ctrl+k up",
+        "command": "-workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
     }
 ]
